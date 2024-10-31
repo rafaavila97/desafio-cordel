@@ -6,30 +6,44 @@
     font-weight: normal;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
 :root{
+    --cor1: #EF5A13;
+    --cor2: #F9BA8F;
+    --cor3: #F4DF8A;
+    --cor4: #FCC463;
+    --cor5: #612F51;
+
     --fonte-padrao: arial, verdana,helvetica,sans-serif;
     --font-destaque: 'cordel', cursive
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100%;
+    background-color: var(--cor3);
+}
+
+a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bolder; 
+}
+
 header{
-    background-image: linear-gradient(to bottom, #F9BA8F, #FCC463);
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
     min-height:100px;
     text-align:center;
     padding-top:40px
     }
 
-    html, body{
-        min-height: 100%;
-        background-color: #F4DF8A;
-    }
-
 header > h1{
     color:black;
     font-family:var(--font-destaque);
+    font-variant: small-caps;
     font-size:3em;
     font-weight:400;
     margin-bottom:20px;
@@ -37,7 +51,7 @@ header > h1{
 }
 
 header > p{
-    color:#EF5A13;
+    color:var(--cor1);
     font-family:var(--fonte-padrao);
     font-size:1.2em;
     max-width:500px;
@@ -48,9 +62,38 @@ header > p{
 }
 
 header > p:hover{
-    background-color: #F9BA8F;
+    background-color: var(--cor2);
     padding:0px;
     border-radius:5px;
     text-decoration:none;
     transition-duration:.5s
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: var(--cor3);
+    color: #000;
+}
+
+section.imagem{
+    background-color: var(--cor2);
+    color: white;
+}
+
+section.imagem > p{
+    background-color: #0000002c;
+    width: 400px;
+} 
+
+footer {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    text-align:center;
+    color: var(--cor1);
+    padding: 10px;
 }
