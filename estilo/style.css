@@ -27,40 +27,6 @@
     font-size: 1em;
 }
 
-div.img {
-    width: 98vw;
-    height: 141vh;
-}
-
-div.parallax1 {
-    position: sticky;
-    top: 0vh;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527);
-    background-image: url(../imagens/background001.jpg);
-    background-size: cover;
-    background-position: center center;    
-}
-
-div.parallax2 {
-    position: sticky;
-    top: 0vh;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527);
-    background-image: url(../imagens/background002.jpg);
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-}
-
-div.parallax3 {
-    height: 158vh;
-}
-
-
-div.p-absol {
-    position: absolute;
-    z-index: 2;
-}
-
 html, body{
     min-height: 100%;
     font-family: var(--fonte-padrao);
