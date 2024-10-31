@@ -6,6 +6,8 @@
     font-weight: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Passion+One:wght@700&display=swap');
+
 :root{
     --cor1: #EF5A13;
     --cor2: #F9BA8F;
@@ -14,16 +16,20 @@
     --cor5: #612F51;
 
     --fonte-padrao: arial, verdana,helvetica,sans-serif;
-    --font-destaque: 'cordel', cursive
+    --fonte-2: "Passion One", sans-serif, cursive;
+    --fonte-3: "Itim", cursive;
+    --fonte-destaque: 'cordel',cursive;      
 }
 
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body{
     min-height: 100%;
+    font-family: var(--fonte-padrao);
     background-color: var(--cor3);
 }
 
@@ -42,9 +48,9 @@ header{
 
 header > h1{
     color:black;
-    font-family:var(--font-destaque);
+    font-family:var(--fonte-destaque);
     font-variant: small-caps;
-    font-size:3em;
+    font-size:10vw;
     font-weight:400;
     margin-bottom:20px;
     text-shadow:0.5px 0.5px 0 #000
@@ -52,7 +58,7 @@ header > h1{
 
 header > p{
     color:var(--cor1);
-    font-family:var(--fonte-padrao);
+    font-family:var(--fonte-2);
     font-size:1.2em;
     max-width:500px;
     padding-right:10px;
@@ -70,6 +76,8 @@ header > p:hover{
 }
 
 section{
+    font-family: var(--fonte-3);
+    font-size: 1.4em;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -87,12 +95,13 @@ section.imagem{
 }
 
 section.imagem > p{
+    display: inline-block;
     background-color: #0000002c;
-    width: 400px;
 } 
 
 footer {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    font-family: var(--fonte-destaque);
     text-align:center;
     color: var(--cor1);
     padding: 10px;
