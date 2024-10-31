@@ -84,6 +84,10 @@ section{
     padding-left: 30px;
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: var(--cor3);
     color: #000;
@@ -92,12 +96,27 @@ section.normal{
 section.imagem{
     background-color: var(--cor2);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.418);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     display: inline-block;
-    background-color: #0000002c;
+    background-color: #0000001a;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
 } 
+
+section#imagem01{
+    background-image: url(../imagens/interracial-couple-s-hand-holding-each-other-s-finger-against-concrete-backdrop.jpg);
+    background-position: center center;
+}
+
+section#imagem02{
+    background-image: url(../imagens/beautiful-couple-woods-background-forest-clearance-field.jpg);
+    background-position: center center;
+}
 
 footer {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
